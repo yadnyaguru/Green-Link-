@@ -1,0 +1,1 @@
+package com.greenlink.dto; import java.time.Instant; public record RequestView(String _id,Object listing,UserView requester,UserView provider,String status,String message,int quantity,double totalPrice,Instant createdAt,Instant updatedAt){}

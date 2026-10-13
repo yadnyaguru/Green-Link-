@@ -1,0 +1,35 @@
+# Java / Maven
+target/
+backend/target/
+*.class
+*.jar
+*.war
+
+# Node / Frontend
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.npm
+*.log
+
+# Secrets & Environment
+.env
+backend/.env
+frontend/.env
+*.env.local
+
+# Local uploads & temporary media
+uploads/
+backend/uploads/
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+
+# Operating System files
+.DS_Store
+Thumbs.db

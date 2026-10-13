@@ -1,0 +1,1 @@
+package com.greenlink.dto; import java.time.Instant; public record RatingView(String _id,UserView provider,UserView user,String request,int rating,String comment,Instant createdAt,Instant updatedAt){}

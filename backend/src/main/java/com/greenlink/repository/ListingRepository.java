@@ -1,0 +1,2 @@
+package com.greenlink.repository; import com.greenlink.model.Listing; import java.util.List; import org.bson.types.ObjectId; import org.springframework.data.mongodb.repository.MongoRepository;
+public interface ListingRepository extends MongoRepository<Listing,ObjectId>{List<Listing> findByAvailabilityTrueOrderByCreatedAtDesc(); List<Listing> findByProviderOrderByCreatedAtDesc(ObjectId provider); long countByProvider(ObjectId provider);}

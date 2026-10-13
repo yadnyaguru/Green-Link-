@@ -1,0 +1,4 @@
+package com.greenlink.model;
+import java.time.Instant; import org.bson.types.ObjectId; import org.springframework.data.annotation.*; import org.springframework.data.mongodb.core.mapping.Document;
+@Document("messages") public class Message { @Id private ObjectId id; private ObjectId request; private ObjectId sender; private String content; @CreatedDate private Instant createdAt; @LastModifiedDate private Instant updatedAt;
+public ObjectId getId(){return id;} public void setId(ObjectId v){id=v;} public ObjectId getRequest(){return request;} public void setRequest(ObjectId v){request=v;} public ObjectId getSender(){return sender;} public void setSender(ObjectId v){sender=v;} public String getContent(){return content;} public void setContent(String v){content=v;} public Instant getCreatedAt(){return createdAt;} public void setCreatedAt(Instant v){createdAt=v;} public Instant getUpdatedAt(){return updatedAt;} public void setUpdatedAt(Instant v){updatedAt=v;}}

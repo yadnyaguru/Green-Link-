@@ -1,0 +1,1 @@
+package com.greenlink.dto; import java.util.List; import java.util.Map; public record DashboardStats(long totalPlants,long totalListings,long totalRequests,long totalProviders,long totalUsers,double averageRating,long totalRatings,List<Map<String,Object>> recentActivity){}

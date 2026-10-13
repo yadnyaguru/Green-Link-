@@ -1,0 +1,2 @@
+package com.greenlink.repository; import com.greenlink.model.Request; import java.time.Instant; import java.util.List; import org.bson.types.ObjectId; import org.springframework.data.mongodb.repository.MongoRepository;
+public interface RequestRepository extends MongoRepository<Request,ObjectId>{List<Request> findByRequesterOrderByCreatedAtDesc(ObjectId id); List<Request> findByProviderOrderByCreatedAtDesc(ObjectId id); long countByProvider(ObjectId id); List<Request> findByCreatedAtAfter(Instant t);}

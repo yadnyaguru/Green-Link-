@@ -1,0 +1,2 @@
+package com.greenlink.repository; import com.greenlink.model.Plant; import java.util.List; import org.bson.types.ObjectId; import org.springframework.data.mongodb.repository.MongoRepository; import org.springframework.data.mongodb.repository.Query;
+public interface PlantRepository extends MongoRepository<Plant,ObjectId>{ @Query("{'$or':[{'name':{'$regex':?0,'$options':'i'}},{'scientificName':{'$regex':?0,'$options':'i'}},{'description':{'$regex':?0,'$options':'i'}}]}") List<Plant> search(String term); List<Plant> findAllByOrderByCreatedAtDesc(); }

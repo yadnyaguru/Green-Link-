@@ -1,0 +1,1 @@
+package com.greenlink.util; import org.bson.types.ObjectId; public final class IdUtil {private IdUtil(){} public static ObjectId oid(String id){if(id==null||!ObjectId.isValid(id))throw new IllegalArgumentException("Invalid id");return new ObjectId(id);}}

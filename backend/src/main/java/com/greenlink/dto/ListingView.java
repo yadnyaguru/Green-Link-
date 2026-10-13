@@ -1,0 +1,1 @@
+package com.greenlink.dto; import java.time.Instant; public record ListingView(String _id,UserView provider,PlantView plant,double price,int quantity,String address,String description,boolean availability,Object location,Instant createdAt,Instant updatedAt){}

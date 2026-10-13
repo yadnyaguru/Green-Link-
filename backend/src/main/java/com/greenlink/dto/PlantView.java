@@ -1,0 +1,1 @@
+package com.greenlink.dto; import java.time.Instant; public record PlantView(String _id,String name,String scientificName,String description,String careInstructions,String image,UserView addedBy,Instant createdAt,Instant updatedAt){}
